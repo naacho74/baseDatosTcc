@@ -1,0 +1,11 @@
+package com.tcc.apiCuartosTcc.repocitorios;
+
+import com.tcc.apiCuartosTcc.entidades.Mercancia;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MercanciaRepocitorio extends JpaRepository <Mercancia,Integer> {
+
+
+}
