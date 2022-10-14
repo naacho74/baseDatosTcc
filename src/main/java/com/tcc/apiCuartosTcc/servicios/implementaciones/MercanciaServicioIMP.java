@@ -107,7 +107,7 @@ public class MercanciaServicioIMP implements ServicioGenerico<Mercancia>  {
             Double capacidadOcupadaPorMercancia=mercanciaARetirar.get().getVolumen();
             Double capacidadDisponible=zonaAsociadaAMercancia.get().getDisponible();
             Double capacidadLiberada=capacidadDisponible+capacidadOcupadaPorMercancia;
-            zonaAsociadaAMercancia.get().setDisponible(capacidadDisponible);
+            zonaAsociadaAMercancia.get().setDisponible(capacidadLiberada);
             zonaRepositorio.save(zonaAsociadaAMercancia.get());
 
             mercanciaRepocitorio.deleteById(id);
